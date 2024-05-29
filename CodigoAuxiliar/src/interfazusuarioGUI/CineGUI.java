@@ -1,9 +1,9 @@
 package interfazusuarioGUI;
 
-
 import cine.Cine;
 import cine.Sala;
 import cine.ButacasContiguas;
+import interfazusuario.ConsoleNotifier;
 
 import javax.swing.*;
 import java.awt.*;
@@ -150,6 +150,10 @@ public class CineGUI extends JFrame {
         cine.comprarEntrada(sala, sesion, fila, columna);
         int id = cine.getIdEntrada(sala, sesion, fila, columna);
         resultadoTextArea.setText("Entrada comprada. ID de Venta: " + id);
+
+        String horaSesion = cine.getHorasDeSesionesDeSala(sala)[sesion - 1];
+        String pelicula = cine.getPeliculas()[sala - 1];
+        ConsoleNotifier.notify(id, fila, columna, horaSesion, pelicula);
     }
 
     private void recogerEntrada() {
@@ -159,6 +163,10 @@ public class CineGUI extends JFrame {
 
         String entradas = cine.recogerEntradas(id, sala, sesion);
         resultadoTextArea.setText("Entradas recogidas: " + entradas);
+
+        String horaSesion = cine.getHorasDeSesionesDeSala(sala)[sesion - 1];
+        String pelicula = cine.getPeliculas()[sala - 1];
+        ConsoleNotifier.notify(id, 0, 0, horaSesion, pelicula); // Here, fila and columna are unknown, setting to 0
     }
 
     private void consultarSesion() {
