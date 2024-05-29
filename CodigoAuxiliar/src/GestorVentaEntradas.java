@@ -1,3 +1,5 @@
+//Autores: Javier Belloch y Jorge Molina
+
 import interfazusuario.LecturaTeclado;
 import interfazusuario.VentanillaVirtualUsuario;
 import cine.ButacasContiguas;
@@ -53,7 +55,7 @@ public class GestorVentaEntradas {
 									ventanilla.getFila(), 
 									ventanilla.getColumna()));
 				} else
-					System.out.println("La sesion seleccionada est· llena");
+					System.out.println("La sesion seleccionada estï¿½ llena");
 				break;
 				
 			case RECOGER :
@@ -104,7 +106,7 @@ public class GestorVentaEntradas {
 										butacas.getFila(), 
 										butacas.getColumna()));
 					} else
-						System.out.println("Has descartado la recomendaciÛn");
+						System.out.println("Has descartado la recomendaciï¿½n");
 					
 				} else
 					System.out.println("No hay tantas butacas disponibles contiguas");

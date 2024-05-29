@@ -1,3 +1,5 @@
+//Autores: Javier Belloch y Jorge Molina
+
 package cine;
 
 public class ButacasContiguas {	

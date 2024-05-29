@@ -1,3 +1,5 @@
+//Autores: Javier Belloch y Jorge Molina
+
 package interfazusuarioGUI;
 
 import cine.Cine;

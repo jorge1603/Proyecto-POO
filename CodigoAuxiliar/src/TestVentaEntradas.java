@@ -1,3 +1,5 @@
+//Autores: Javier Belloch y Jorge Molina
+
 import interfazusuario.VentanillaVirtualUsuario;
 import cine.ButacasContiguas;
 import cine.Cine;

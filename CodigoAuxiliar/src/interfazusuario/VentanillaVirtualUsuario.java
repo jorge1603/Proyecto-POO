@@ -1,3 +1,5 @@
+//Autores: Javier Belloch y Jorge Molina
+
 package interfazusuario;
 import interfazusuario.menu.Menu;
 import cine.ButacasContiguas;

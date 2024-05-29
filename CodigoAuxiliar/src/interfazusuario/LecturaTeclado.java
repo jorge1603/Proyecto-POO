@@ -1,3 +1,5 @@
+//Autores: Javier Belloch y Jorge Molina
+
 package interfazusuario;
 
 import java.util.Scanner;
